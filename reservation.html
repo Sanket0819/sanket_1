@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP Restaurant - Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(235, 233, 233);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(order.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+        .order-form-container {
+            background-color: rgb(233, 232, 232);
+            border: 1px solid rgb(197, 197, 197);
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        .order-form-container h2 {
+            text-align: center;
+            color: #333;
+        }
+        .order-form-container label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+        .order-form-container input,
+        .order-form-container textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid rgb(217, 215, 215);
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        .order-form-container textarea {
+            resize: vertical;
+        }
+        .order-form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(20, 145, 217);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .order-form-container button:hover {
+            background-color: rgb(0, 89, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="order-form-container">
+        <h2>SP Restaurant - Order Form</h2>
+        <form action="thankyou.html">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="order">Order Details:</label>
+            <textarea id="order" name="order" rows="4" required></textarea>
+            
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</body>
+</html>

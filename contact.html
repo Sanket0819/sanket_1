@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(255, 255, 255);
+            color: rgb(63, 63, 63);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(wp4289147.jpg);
+            background-size: cover;
+        }
+
+        .contact-section {
+            width: 90%;
+            max-width: 700px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            border: 2px solid rgb(49, 145, 254);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-section:hover {
+            transform: translateY(-10px);
+        }
+
+        .contact-section h2,
+        .contact-section h3 {
+            color: rgb(49, 145, 254);
+            margin: 10px 0;
+        }
+
+        .contact-section p {
+            line-height: 1.6;
+        }
+
+        .contact-section form input,
+        .contact-section form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid rgb(154, 150, 150);
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .contact-section form button {
+            background-color: rgb(49, 145, 254);
+            color: rgb(239, 237, 237);
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-section form button:hover {
+            background-color: rgb(2, 101, 181);
+        }
+
+        .m
+        
+        -iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Address: Azad B Parul Underline, Vadodara City</p>
+        <p>Phone: 1223334444</p>
+        <p>Email: sprestaurant@gmail.com</p>
+
+        <h3>Send Us a Message</h3>
+        
+
+        <form action="contact.html">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" placeholder="Your Message" required></textarea><br>
+            <button type="submit">Message</button>
+
+            <h3>Our Location</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.717310997847!2d73.36084547539!3d22.288695779694958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fda2400192473%3A0xc319c9237f2928e8!2sParul%20University!5e0!3m2!1sen!2sin!4v1739165866723!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+            </iframe>
+        </form>
+    </section>
+</body>
+
+</html>

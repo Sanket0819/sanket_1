@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(244, 248, 251);
+            margin: 0;
+            padding: 0;
+            background-image: url(menu.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+           
+        }
+        .menu {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+           
+        }
+        h1.rest {
+            text-align: center;
+            color: rgb(58, 58, 58);
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .menu-section {
+            margin-bottom: 30px;
+        }
+        .menu-section h2 {
+            color: rgb(124, 121, 121);
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid white;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item h3 {
+            margin: 0;
+            color: rgb(58, 58, 58);
+            font-size: 18px;
+        }
+        .menu-item p {
+            margin: 5px 0;
+            color: rgb(108, 107, 107);
+            font-size: 14px;
+        }
+        .price {
+            font-weight: bold;
+            color: rgb(58, 58, 58);
+            font-size: 18px;
+        }
+        .se1 {
+            display: flex;
+            align-items: center;
+        }
+        .menupic {
+            height: 103px;
+            width: 103px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .buttons a {
+            flex: 1;
+            padding: 10px;
+            margin: 0 5px;
+            text-align: center;
+            background-color: rgb(0, 123, 255);
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .buttons a:hover {
+            background-color: rgb(0, 86, 179);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <h1 class="rest">Restaurant Menu</h1>
+        
+        <div class="menu-section">
+            <h2>Starters</h2>
+            <div class="menu-item">
+                <div class="se1">
+                    <img src="kebab.jpg" alt="Potato kebab" class="menupic">
+                    <div>
+                        <h3>Potato Kebab</h3>
+                        <p>Deliciously spiced crispy potato kebabs</p>
+                    </div>
+                </div>
+                <div class="price">₹350</div>
+            </div>
+            <div class="menu-item">
+                <div class="se1">
+                    <img src="tikka.jpg" alt="Paneer tikka" class="menupic">
+                    <div>
+                        <h3>Paneer Tikka</h3>
+                         <p>Rare fired paneer cubes served with elegant sauce</p>
+                    </div>
+                </div>
+                <div class="price">₹499</div>
+            </div>
+        </div>
+        
+        <div class="menu-section">
+            <h2>Main Courses</h2>
+            <div class="menu-item">
+                <div class="se1">
+                    <img src="chicken.jpg" alt="Chicken biryani" class="menupic">
+                    <div>
+                         <h3>Grilled Chicken</h3>
+                         <p>Marinated grilled chicken breast</p>
+                    </div>
+                </div>
+                <div class="price">₹699</div>
+            </div>
+            <div class="menu-item">
+                <div class="se1">
+                    <img src="butter.jpg" alt="paneer butter Masala" class="menupic">
+                    <div>
+                        <h3>Paneer Butter Masala</h3>
+                        <p>Thick aromatic curry of sizzled paneer</p>
+                    </div>
+                </div>
+                <div class="price">₹599</div>
+            </div>
+        </div>
+        
+        <div class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <div class="se1">
+                    <img src="choco.jpg" alt="chocolate cake" class="menupic">
+                    <div>
+                         <h3>Chocolate Cake</h3>
+                         <p>Rich and moist chocolate cake</p>
+                    </div>
+                </div>
+                <div class="price">₹299</div>
+            </div>
+            <div class="menu-item">
+                <div class="se1">
+                    <img src="cheese.jpg" alt="cheesecake" class="menupic">
+                    <div>
+                         <h3>Cheesecake</h3>
+                         <p>Creamy cheesecake with a graham cracker crust</p>
+                    </div>
+                </div>
+                <div class="price">₹299</div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a href="home.html">Home Page</a>
+            <a href="reservation.html">Order Page</a>
+        </div>
+    </div>
+   
+</body>
+</html>
